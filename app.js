@@ -9,6 +9,12 @@ function sortear() {
         return;
     }
 
+    //Proteção no total de números sorteados:
+    if(quantidade > (ate - de + 1)) {
+        alert('O campo "Quantidade" deve ser menor ou igual ao intervalo informado nos campos "Do número" e "Até o número". Verifique os valores e tente novamente.');
+        return;
+    }
+
     let sorteados = [];
     for (let i = 0; i < quantidade; i++) {
         let numero = obterNumeroAleatorio(de, ate);
