@@ -9,13 +9,6 @@ function sortear() {
         return;
     }
 
-    // alert(`Quantidade: ${quantidade}`);
-    // alert(`Do número: ${de}`);
-    // alert(`Até o número: ${ate}`);
-
-    // let numero = obterNumeroAleatorio(de, ate);
-    // alert(numero);
-
     let sorteados = [];
     for (let i = 0; i < quantidade; i++) {
         let numero = obterNumeroAleatorio(de, ate);
@@ -27,8 +20,6 @@ function sortear() {
 
         sorteados.push(numero);
     }
-
-    // alert(sorteados);
 
     let resultado = document.getElementById('resultado');
     resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados: ${sorteados}</label>`;
